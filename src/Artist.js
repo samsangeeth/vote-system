@@ -13,11 +13,24 @@ const Artist = (props) => {
             <div className="middle aligned content">
                 <div className="description">
                     <a>
-                        <i className="large up caret icon" />
+                        <i 
+                        className="large up caret icon" 
+                        onClick = {props.voteArtist.bind(this, props.id)}
+                        />
+
+                        {props.votes}
+
+                        <i 
+                        className="large down caret icon" 
+                        onClick = {props.voteArtistDown.bind(this, props.id)}
+                        />
                     </a>
+                    <p>
+                        {props.name}
+                    </p>
+                    
                 </div>
             </div>
-            {props.name}
         </div>
     )
 }
