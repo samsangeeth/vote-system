@@ -5,7 +5,7 @@ import ArtistList from './ArtistList';
 
 function App() {
   return(
-    <div className="App">
+    <div className="app">
       <ArtistList />
     </div>
   );
